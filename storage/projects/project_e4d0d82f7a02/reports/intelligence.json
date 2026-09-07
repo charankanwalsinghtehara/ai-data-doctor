@@ -1,0 +1,37 @@
+{
+    "dataset_classification": {
+        "dataset_type": "mixed",
+        "rows": 3,
+        "columns": 3,
+        "numeric_columns": 2,
+        "categorical_columns": 1,
+        "datetime_columns": 0
+    },
+    "target_candidates": [
+        {
+            "column": "Age",
+            "score": 25,
+            "unique_values": 3
+        },
+        {
+            "column": "Salary",
+            "score": 25,
+            "unique_values": 3
+        },
+        {
+            "column": "Name",
+            "score": 20,
+            "unique_values": 3
+        }
+    ],
+    "ml_recommendation": {
+        "ml_recommended": false,
+        "reason": "Dataset is too small for reliable ML."
+    },
+    "analysis_recommendations": [
+        "descriptive_statistics",
+        "correlation_analysis",
+        "distribution_analysis",
+        "category_distribution"
+    ]
+}

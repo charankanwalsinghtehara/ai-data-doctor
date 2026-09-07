@@ -1,0 +1,428 @@
+{
+    "report_information": {
+        "generated_at": "2026-09-07T11:47:05.367559",
+        "system": "AI Data Doctor",
+        "version": "1.0.0"
+    },
+    "dataset": {
+        "rows": 3,
+        "columns": 3,
+        "column_names": [
+            "Name",
+            "Age",
+            "Salary"
+        ],
+        "memory_usage_bytes": 216,
+        "data_types": {
+            "Name": "str",
+            "Age": "int64",
+            "Salary": "int64"
+        },
+        "understanding": {
+            "success": true,
+            "dataset": {
+                "rows": 3,
+                "columns": 3
+            },
+            "dataset_classification": {
+                "dataset_type": "customer",
+                "confidence": 16.67
+            },
+            "columns": {
+                "Name": {
+                    "technical_type": "object",
+                    "role": "identifier",
+                    "semantic_type": "name",
+                    "missing_values": 0,
+                    "unique_values": 3
+                },
+                "Age": {
+                    "technical_type": "integer",
+                    "role": "identifier",
+                    "semantic_type": "unknown",
+                    "missing_values": 0,
+                    "unique_values": 3
+                },
+                "Salary": {
+                    "technical_type": "integer",
+                    "role": "identifier",
+                    "semantic_type": "currency",
+                    "missing_values": 0,
+                    "unique_values": 3
+                }
+            },
+            "possible_target_columns": []
+        },
+        "profiling": {
+            "success": true,
+            "dataset": {
+                "rows": 3,
+                "columns": 3,
+                "total_cells": 9,
+                "memory_usage_mb": 0.0002,
+                "column_names": [
+                    "Name",
+                    "Age",
+                    "Salary"
+                ],
+                "is_empty": false
+            },
+            "numerical": {
+                "Age": {
+                    "count": 3,
+                    "mean": 27.666666666666668,
+                    "median": 28.0,
+                    "std": 2.5166114784235836,
+                    "variance": 6.333333333333334,
+                    "min": 25,
+                    "max": 30,
+                    "q1": 26.5,
+                    "q3": 29.0,
+                    "range": 5,
+                    "sum": 83
+                },
+                "Salary": {
+                    "count": 3,
+                    "mean": 55000.0,
+                    "median": 55000.0,
+                    "std": 5000.0,
+                    "variance": 25000000.0,
+                    "min": 50000,
+                    "max": 60000,
+                    "q1": 52500.0,
+                    "q3": 57500.0,
+                    "range": 10000,
+                    "sum": 165000
+                }
+            },
+            "categorical": {},
+            "text": {},
+            "missing_values": {
+                "total_missing_values": 0,
+                "columns": {
+                    "Name": {
+                        "missing_count": 0,
+                        "missing_percentage": 0.0
+                    },
+                    "Age": {
+                        "missing_count": 0,
+                        "missing_percentage": 0.0
+                    },
+                    "Salary": {
+                        "missing_count": 0,
+                        "missing_percentage": 0.0
+                    }
+                }
+            },
+            "duplicates": {
+                "duplicate_rows": 0,
+                "duplicate_percentage": 0.0,
+                "unique_rows": 3
+            },
+            "column_profiles": {
+                "Name": {
+                    "basic": {
+                        "name": "Name",
+                        "pandas_dtype": "str",
+                        "total_values": 3,
+                        "non_missing_values": 3,
+                        "missing_values": 0,
+                        "missing_percentage": 0.0,
+                        "unique_values": 3
+                    },
+                    "samples": [
+                        "John",
+                        "Alice",
+                        "Bob"
+                    ],
+                    "understanding": {
+                        "technical_type": "object",
+                        "role": "identifier",
+                        "semantic_type": "name"
+                    }
+                },
+                "Age": {
+                    "basic": {
+                        "name": "Age",
+                        "pandas_dtype": "int64",
+                        "total_values": 3,
+                        "non_missing_values": 3,
+                        "missing_values": 0,
+                        "missing_percentage": 0.0,
+                        "unique_values": 3
+                    },
+                    "samples": [
+                        "25",
+                        "30",
+                        "28"
+                    ],
+                    "understanding": {
+                        "technical_type": "integer",
+                        "role": "identifier",
+                        "semantic_type": "unknown"
+                    }
+                },
+                "Salary": {
+                    "basic": {
+                        "name": "Salary",
+                        "pandas_dtype": "int64",
+                        "total_values": 3,
+                        "non_missing_values": 3,
+                        "missing_values": 0,
+                        "missing_percentage": 0.0,
+                        "unique_values": 3
+                    },
+                    "samples": [
+                        "50000",
+                        "60000",
+                        "55000"
+                    ],
+                    "understanding": {
+                        "technical_type": "integer",
+                        "role": "identifier",
+                        "semantic_type": "currency"
+                    }
+                }
+            }
+        }
+    },
+    "data_quality": {
+        "available": true,
+        "completeness": {
+            "overall_completeness": 100.0,
+            "total_missing_values": 0,
+            "columns": {
+                "Name": {
+                    "missing_values": 0,
+                    "completeness_percentage": 100.0
+                },
+                "Age": {
+                    "missing_values": 0,
+                    "completeness_percentage": 100.0
+                },
+                "Salary": {
+                    "missing_values": 0,
+                    "completeness_percentage": 100.0
+                }
+            }
+        },
+        "duplicates": {
+            "total_rows": 3,
+            "duplicate_rows": 0,
+            "duplicate_percentage": 0.0,
+            "uniqueness_score": 100.0
+        },
+        "column_quality": {
+            "Name": {
+                "unique_values": 3,
+                "missing_values": 0,
+                "missing_percentage": 0.0,
+                "issues": [
+                    "high_cardinality"
+                ],
+                "quality_status": "problem"
+            },
+            "Age": {
+                "unique_values": 3,
+                "missing_values": 0,
+                "missing_percentage": 0.0,
+                "issues": [
+                    "high_cardinality"
+                ],
+                "quality_status": "problem"
+            },
+            "Salary": {
+                "unique_values": 3,
+                "missing_values": 0,
+                "missing_percentage": 0.0,
+                "issues": [
+                    "high_cardinality"
+                ],
+                "quality_status": "problem"
+            }
+        }
+    },
+    "cleaning": {
+        "available": true,
+        "summary": {
+            "original_rows": 3,
+            "cleaned_rows": 3,
+            "original_columns": 3,
+            "cleaned_columns": 3
+        },
+        "recommendations": [],
+        "audit_log": [
+            {
+                "action": "remove_duplicates",
+                "details": {
+                    "rows_before": 3,
+                    "rows_after": 3,
+                    "duplicates_removed": 0
+                }
+            },
+            {
+                "action": "remove_empty_columns",
+                "details": {
+                    "removed_columns": [],
+                    "total_removed": 0
+                }
+            },
+            {
+                "action": "handle_missing_values",
+                "details": {
+                    "Name": {
+                        "method": "none",
+                        "filled_values": 0
+                    },
+                    "Age": {
+                        "method": "none",
+                        "filled_values": 0
+                    },
+                    "Salary": {
+                        "method": "none",
+                        "filled_values": 0
+                    }
+                }
+            },
+            {
+                "action": "normalize_categories",
+                "details": {}
+            },
+            {
+                "action": "convert_datatypes",
+                "details": {}
+            },
+            {
+                "action": "handle_outliers",
+                "details": {
+                    "Age": {
+                        "outlier_count": 0,
+                        "lower_bound": 22.75,
+                        "upper_bound": 32.75,
+                        "values_modified": 0
+                    },
+                    "Salary": {
+                        "outlier_count": 0,
+                        "lower_bound": 45000.0,
+                        "upper_bound": 65000.0,
+                        "values_modified": 0
+                    }
+                }
+            }
+        ]
+    },
+    "analysis": {
+        "available": true,
+        "correlations": {
+            "available": true,
+            "matrix": {
+                "Age": {
+                    "Age": 1.0,
+                    "Salary": 0.9934
+                },
+                "Salary": {
+                    "Age": 0.9934,
+                    "Salary": 1.0
+                }
+            },
+            "relationships": [
+                {
+                    "column_1": "Age",
+                    "column_2": "Salary",
+                    "correlation": 0.9934,
+                    "strength": "very_strong",
+                    "direction": "positive"
+                }
+            ]
+        },
+        "distributions": {
+            "Age": {
+                "available": true,
+                "count": 3,
+                "mean": 27.6667,
+                "median": 28.0,
+                "minimum": 25.0,
+                "maximum": 30.0,
+                "q1": 26.5,
+                "q3": 29.0,
+                "skewness": -0.5856,
+                "distribution_shape": "left_skewed"
+            },
+            "Salary": {
+                "available": true,
+                "count": 3,
+                "mean": 55000.0,
+                "median": 55000.0,
+                "minimum": 50000.0,
+                "maximum": 60000.0,
+                "q1": 52500.0,
+                "q3": 57500.0,
+                "skewness": 0.0,
+                "distribution_shape": "approximately_symmetric"
+            }
+        },
+        "relationships": {},
+        "trends": {},
+        "statistics": {
+            "Age": {
+                "skewness": -0.5856,
+                "distribution_shape": "left_skewed",
+                "mean": 27.6667,
+                "median": 28.0
+            },
+            "Salary": {
+                "skewness": 0.0,
+                "distribution_shape": "approximately_symmetric",
+                "mean": 55000.0,
+                "median": 55000.0
+            }
+        },
+        "insights": [
+            {
+                "type": "strong_relationship",
+                "priority": "high",
+                "message": "Age and Salary have a very_strong positive relationship (correlation: 0.9934)."
+            },
+            {
+                "type": "distribution",
+                "priority": "medium",
+                "message": "Age has a left_skewed distribution (skewness: -0.5856)."
+            }
+        ]
+    },
+    "anomalies": {
+        "available": true,
+        "summary": {
+            "total_anomalies": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 0
+        },
+        "anomalies": {},
+        "isolation_forest": {
+            "available": false,
+            "message": "At least 5 rows are recommended.",
+            "anomaly_count": 0,
+            "anomaly_indices": []
+        }
+    },
+    "machine_learning": {
+        "available": true,
+        "target_candidates": [
+            {
+                "column": "Salary",
+                "score": 5,
+                "unique_values": 3,
+                "dtype": "int64"
+            },
+            {
+                "column": "Age",
+                "score": 2,
+                "unique_values": 3,
+                "dtype": "int64"
+            }
+        ],
+        "training_performed": false
+    },
+    "final_recommendations": []
+}

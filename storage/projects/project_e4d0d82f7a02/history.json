@@ -1,0 +1,21 @@
+[
+    {
+        "event": "project_created",
+        "details": {
+            "project_name": "test_analysis"
+        },
+        "timestamp": "2026-09-07T11:47:00.883008"
+    },
+    {
+        "event": "project_results_saved",
+        "details": {
+            "saved_items": [
+                "original_dataset",
+                "cleaned_dataset",
+                "final_report",
+                "intelligence"
+            ]
+        },
+        "timestamp": "2026-09-07T11:47:05.403403"
+    }
+]

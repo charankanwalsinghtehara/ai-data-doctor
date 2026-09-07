@@ -1,0 +1,35 @@
+2026-09-07 11:47:00,841 | INFO | pipeline | AI Data Doctor pipeline started.
+2026-09-07 11:47:00,844 | INFO | pipeline | Project: test_analysis
+2026-09-07 11:47:00,885 | INFO | pipeline | Starting step: file_validation
+2026-09-07 11:47:00,886 | INFO | pipeline | Completed step: file_validation
+2026-09-07 11:47:00,887 | INFO | pipeline | Starting step: ingestion
+2026-09-07 11:47:00,888 | INFO | pipeline | Completed step: ingestion
+2026-09-07 11:47:00,889 | INFO | pipeline | Starting step: extraction
+2026-09-07 11:47:00,939 | INFO | pipeline | Completed step: extraction
+2026-09-07 11:47:00,942 | INFO | pipeline | Starting step: metadata
+2026-09-07 11:47:00,953 | INFO | pipeline | Completed step: metadata
+2026-09-07 11:47:00,954 | INFO | pipeline | Starting step: dataset_validation
+2026-09-07 11:47:00,971 | INFO | pipeline | Completed step: dataset_validation
+2026-09-07 11:47:00,972 | INFO | pipeline | Starting step: understanding
+2026-09-07 11:47:01,027 | INFO | pipeline | Completed step: understanding
+2026-09-07 11:47:01,028 | INFO | pipeline | Starting step: profiling
+2026-09-07 11:47:01,055 | INFO | pipeline | Completed step: profiling
+2026-09-07 11:47:01,056 | INFO | pipeline | Starting step: quality
+2026-09-07 11:47:01,059 | INFO | pipeline | Completed step: quality
+2026-09-07 11:47:01,060 | INFO | pipeline | Starting step: cleaning
+2026-09-07 11:47:01,071 | INFO | pipeline | Completed step: cleaning
+2026-09-07 11:47:01,071 | INFO | pipeline | Starting step: analysis
+2026-09-07 11:47:01,086 | INFO | pipeline | Completed step: analysis
+2026-09-07 11:47:01,086 | INFO | pipeline | Starting step: anomaly_detection
+2026-09-07 11:47:01,103 | INFO | pipeline | Completed step: anomaly_detection
+2026-09-07 11:47:01,104 | INFO | pipeline | Starting step: intelligence
+2026-09-07 11:47:01,109 | INFO | pipeline | Completed step: intelligence
+2026-09-07 11:47:01,110 | INFO | pipeline | Starting step: visualization
+2026-09-07 11:47:05,364 | INFO | pipeline | Completed step: visualization
+2026-09-07 11:47:05,364 | INFO | pipeline | Starting step: ml_recommendations
+2026-09-07 11:47:05,365 | INFO | pipeline | Completed step: ml_recommendations
+2026-09-07 11:47:05,366 | INFO | pipeline | Starting step: reporting
+2026-09-07 11:47:05,367 | INFO | pipeline | Completed step: reporting
+2026-09-07 11:47:05,367 | INFO | pipeline | Starting step: storage
+2026-09-07 11:47:05,404 | INFO | pipeline | Completed step: storage
+2026-09-07 11:47:05,425 | INFO | pipeline | AI Data Doctor pipeline completed successfully.
